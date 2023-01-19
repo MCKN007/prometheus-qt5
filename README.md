@@ -5,22 +5,16 @@
 这个程序是在Linux上才能运行的而且是apt包管理器的系统
 使用方法：
 ```shell
-1. git clone https://github.com/MCKN007/prometheus.git
-2. cd prometheus
-3. lua prometheus_main.lua
+1. 在https://github.com/MCKN007/prometheus-qt5/releases/下载程序
+2. unzip prometheus-qt-v0.0.1.zip
+3. chmod -X NFC_PROMETHEUS
+4. ./NFC_PROMETHEUS
 ```
-软请确保软件第一次运行时连接网络，需要下载必须的库
-```shell
-输入1是安装软件驱动程序，比如libnfc，同时也会安装mfoc和mfuck之类的nfc工具安装完成之后会设置nfc文件
-输入2是运行卡片扫描程序,也就是扫描卡片类型这里是使用os.execute函数去调用系统执行命令扫描ic卡
-输入3是读取卡片内容并且保存为文件方便你以后的写入和对密钥的读取
-输入4是把你想要写入的数据写入到IC卡里面，第一次输入的是要写入文件的路径，第二次输入的是米要文件的路径
-输入5是使用mfcuk暴力破解密钥，然后你可以利用暴力破解来的密钥配合mfoc去使用
-输入6是使用bless编辑读取的数据文件
-```
+软请确保软件第一次运行时连接网络，需要下载必须的驱动程序
+
 #### 软件的下载地址
 ```
-https://github.com/MCKN007/prometheus/releases/
+https://github.com/MCKN007/prometheus-qt5/releases/
 ````
 第一个是命令行版本，第二个是带图形化界面的版本
 
